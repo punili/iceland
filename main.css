@@ -1,0 +1,241 @@
+@charset "UTF-8";
+body {
+	max-width: 1200px;
+	margin: auto;
+	font-family:"微軟正黑體", "Space Mono", sans-serif;
+	font-size: 18px;
+	line-height: 1.4em;
+	background-color: #CFF;
+	background: url(images/iceland/iceland-bg.jpg) no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed; 
+}
+
+	.web_head {    /* 冰島自助旅行去 */
+		background-color: #FFF;		  
+		padding: 8px 8px 15px 30px;		  
+		position: fixed;
+		top: 0;	      
+	        left: 0;
+	        width: 100%;
+	        z-index: 999;	      
+  		margin: auto;
+  		opacity: 0.9;
+  		filter: alpha(opacity=90); /* For IE8 and earlier */
+  		  		  
+	}
+
+		.web_head h2 {
+		  font-size: 32px;
+		  margin-left: auto;
+		  
+		}
+
+		.web_head p {
+		  font-size: 20px;
+		  margin-left: 10px;
+		}
+
+	.nav {		    /* 右上按鈕選單 */
+		position: fixed;
+		right: 10px;
+		top: 50px;	
+		width: 100%;	
+		z-index: 1000;
+		text-align: right;
+	}
+		
+	.contact-btn {  
+		display: inline-block;	
+		padding: 5px;		  
+		text-align: center;
+		  
+	}
+
+		.contact-btn a {
+			line-height: 60px;
+			background-color: #FFF;
+			border: 1px solid #09C;
+			padding: 7px;
+			border-radius: 4px;
+			color: #09C;
+			text-decoration: none;
+		}
+		
+			.contact-btn a:hover {
+				background-color: #09C;
+				color: #FFF;
+				border: 1px solid #09C;
+			}
+
+			.contact-btn a:active {
+				position: relative;
+				top: 2px;
+				left: 1px;
+			}
+			.contact-btn input {				
+				background-color: #FFF;
+				border: 1px solid #09C;
+				padding: 7px;
+				border-radius: 4px;
+				color: #09C;
+			}
+
+	.tp a {
+		background-color: #09C;
+		color: #FFF;
+	}    
+
+	
+
+	.container {
+		width: 100%;
+		text-align: left;
+	}
+
+	.content {
+		font-size: 22px;
+		border-radius: 4px;
+		background-color: #FFF;
+		color: #000;
+		border: 1px solid #FFF;
+		margin: 10px auto;
+		padding: 15px;
+		width: 80%;
+  		opacity: 0.7;
+  		filter: alpha(opacity=70); /* For IE8 and earlier */
+		}
+		.content img {
+			width: 60%;
+			margin: 10px auto;	
+			padding: 15px 20%;		
+		}
+
+		.content img:hover {
+			width: 80%;
+			margin: 10px auto;	
+			padding: 15px 10%;		
+		}
+
+		.content img:active {
+			width: 80%;
+			margin: 10px auto;	
+			padding: 15px 10%;		
+		}
+	.showImg {  /* new  */
+	      background-color: #CFF;      
+	      position: fixed;
+	      left: 0;
+	      top: 140px;
+	      width: 100%;
+	      z-index: 1000;
+	      text-align: center;
+    	}
+
+	    .showImg div {
+	      text-align: center;
+	    }
+
+	#big_pic {   /* new  */
+	      margin-top: 10px; 
+	      background-color: #FFF;
+	      width: 40%;	    
+	}
+
+	#close {  /* new */      
+	      background-color: #09F;
+	      border: 1px solid #FFF;
+	      padding: 10px 20px;
+	      border-radius: 4px;
+	      color: #FFF;
+	      font-weight: 600;          
+    	}
+
+	#pic_content {   /* new */    
+	      margin: 15px;
+	}
+
+		
+
+	.gallery { 
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.gallery-item {
+  		  margin: 20px;
+  		  width: 240px;
+		  border: 2px solid #FFF;
+		  border-radius: 4px;
+		  background-color: #FFF;
+		  opacity: 0.8;
+  		  filter: alpha(opacity=80); /* For IE8 and earlier */
+	}
+
+    	.thumbnail {
+		width: 100%;
+		height: auto;
+
+	}
+
+		.thumbnail:hover {
+			width: 100%;
+		    height: auto;
+		    border: 1px solid #0CF;
+		    opacity: 0.8;
+  		    filter: alpha(opacity=80); /* For IE8 and earlier */
+		}
+		
+	figcaption {
+		padding: 10px;
+		text-align: center;
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+		.gallery-item {
+		    	width: 95%;
+		 }
+		#big_pic {   /* new  */	      
+	      		width: 90%;	    
+	        }
+	}
+
+	.spend {
+		text-align: center;
+		border: 1px solid #09F;
+		border-radius: 4px;
+		margin: 10px auto;
+		width: 92%;
+		color: #003;
+	}	
+
+		.spend th {
+			text-align: center;
+			background-color: #6CF;						
+		} 		
+
+		.spend th, td {			
+			border: 1px solid #39C;
+			padding: 0.25rem;
+		}
+
+	.col_a {
+		width: 16%;
+	}		
+
+	.spend_content {
+		text-align: left; 	
+		width: 64%;		
+	}
+
+	.count_t {
+		text-align: right;
+		width: 5%;
+	}
+
+	.count_a {
+		text-align: right;
+		width: 5%;
+	}
