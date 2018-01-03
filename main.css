@@ -6,7 +6,7 @@ body {
 	font-size: 18px;
 	line-height: 1.4em;
 	background-color: #CFF;
-	background: url(images/iceland/iceland-bg.jpg) no-repeat center top;
+	background: url(images/iceland-bg.jpg) no-repeat center top;
 	background-size: cover;
 	background-attachment: fixed; 
 }
@@ -16,21 +16,18 @@ body {
 		padding: 8px 8px 15px 30px;		  
 		position: fixed;
 		top: 0;	      
-	        left: 0;
-	        width: 100%;
-	        z-index: 999;	      
+        left: 0;
+        width: 100%;
+        z-index: 99;	      
   		margin: auto;
   		opacity: 0.9;
   		filter: alpha(opacity=90); /* For IE8 and earlier */
   		  		  
 	}
-
 		.web_head h2 {
 		  font-size: 32px;
-		  margin-left: auto;
-		  
+		  margin-left: auto;		  
 		}
-
 		.web_head p {
 		  font-size: 20px;
 		  margin-left: 10px;
@@ -39,17 +36,48 @@ body {
 	.nav {		    /* 右上按鈕選單 */
 		position: fixed;
 		right: 10px;
-		top: 50px;	
+		top: 15px;	
 		width: 100%;	
-		z-index: 1000;
+		z-index: 100;
 		text-align: right;
 	}
-		
+	.nav > ul {
+		display: inline;
+	}
+	.search-bar {
+		display: inline;	
+		padding: 5px;
+	}
+		.search-bar input {				
+			background-color: #FFF;
+			border: 1px solid #09C;
+			padding: 7px;
+			border-radius: 4px;
+			color: #09C;
+			font-size: 16px;
+		}	
+		.search-bar button {
+			background-color: #FFF;
+			border: 1px solid #09C;
+			color: #09C;
+			padding: 4px 10px;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			line-height: 1.5;			
+		}
+			.search-bar button:hover {
+				background-color: #09C;
+				color: #FFF;
+			}
+			.search-bar button:active {
+				background-color: #09C;
+				color: #FFF;
+			}
 	.contact-btn {  
-		display: inline-block;	
+		display: inline;	
 		padding: 5px;		  
-		text-align: center;
-		  
+		text-align: center;		  
 	}
 
 		.contact-btn a {
@@ -64,8 +92,7 @@ body {
 		
 			.contact-btn a:hover {
 				background-color: #09C;
-				color: #FFF;
-				border: 1px solid #09C;
+				color: #FFF;				
 			}
 
 			.contact-btn a:active {
@@ -73,20 +100,18 @@ body {
 				top: 2px;
 				left: 1px;
 			}
-			.contact-btn input {				
-				background-color: #FFF;
-				border: 1px solid #09C;
-				padding: 7px;
-				border-radius: 4px;
-				color: #09C;
-			}
+			
 
 	.tp a {
 		background-color: #09C;
 		color: #FFF;
 	}    
-
-	
+	.phoneBar {
+		display: none;
+	}
+	.phoneMenu {
+		display: none;
+	}
 
 	.container {
 		width: 100%;
@@ -123,38 +148,55 @@ body {
 			padding: 15px 10%;		
 		}
 	.showImg {  /* new  */
-	      background-color: #CFF;      
+	      background-color: rgba(210,255,255,0.9);      
 	      position: fixed;
 	      left: 0;
 	      top: 140px;
 	      width: 100%;
+	      height: 100vh;
 	      z-index: 1000;
 	      text-align: center;
     	}
-
 	    .showImg div {
 	      text-align: center;
-	    }
-
-	#big_pic {   /* new  */
+	    }	
+	#pic_content {       
 	      margin-top: 10px; 
-	      background-color: #FFF;
-	      width: 40%;	    
+	      margin-left: 5%; 
+	      font-weight: 800;
+	      font-size: 20px;	      
+	      text-align: center;
+	      text-shadow: 1px 1px 2px #AAA;
 	}
-
-	#close {  /* new */      
-	      background-color: #09F;
+	#big_pic {   
+	      margin-top: 10px; 
+	      margin-left: 5%;
+	      background-color: #FFF;
+	      width: 45%;
 	      border: 1px solid #FFF;
-	      padding: 10px 20px;
+	      box-shadow: 2px 2px 2px 2px #AAA;
+	}
+	#close {        
+	      background-color: #09F;
+	      border: 1px solid #09F;
+	      box-shadow: 2px 2px 2px 1px #07F;
+	      padding: 5px;
+	      text-align: center;
 	      border-radius: 4px;
 	      color: #FFF;
-	      font-weight: 600;          
-    	}
-
-	#pic_content {   /* new */    
-	      margin: 15px;
+	      font-weight: 800;
+	      float: right;
+	      right: 0;
+	      top: 0; 
+	      width: 30px;
+	      height: 30px; 
+	      cursor: pointer;        
+	}		
+	.con {
+	  margin: 170px 0 2px 40px;
+	  font-size: 22px;
+	  width: 90%;
 	}
-
 		
 
 	.gallery { 
@@ -172,34 +214,85 @@ body {
 		  background-color: #FFF;
 		  opacity: 0.8;
   		  filter: alpha(opacity=80); /* For IE8 and earlier */
+  		  transition: all 0.5s ease-in-out;
 	}
-
     	.thumbnail {
 		width: 100%;
 		height: auto;
-
 	}
-
 		.thumbnail:hover {
 			width: 100%;
 		    height: auto;
 		    border: 1px solid #0CF;
 		    opacity: 0.8;
   		    filter: alpha(opacity=80); /* For IE8 and earlier */
+  		    cursor: pointer;
 		}
 		
 	figcaption {
 		padding: 10px;
 		text-align: center;
 	}
-
+	@media only screen and (max-width: 1200px){  /* 2/3 */
+		#big_pic {   		    
+		    width: 70%;
+		}
+		.nav > ul {
+			display: none;
+		}
+		.phoneBar {
+			display: inline;
+			float: right;
+			color: #09C;
+	      	font-size: 25px;
+	      	border: 1px solid #09C;
+	      	width: 40px;
+	      	height: 40px;
+		    line-height: 40px;
+	      	text-align: center;
+	      	margin-top: 10px;
+	      	border-radius: 4px;
+	        cursor: pointer;
+	      	display: block; 
+		}
+		.phoneMenu {
+			width: 120px;
+			padding: 5px;			
+			display: none;
+			position: fixed;
+			top: 130px;
+			right: 10px;
+			z-index: 100;		
+			background-color: rgba(255,255,255,0.9);
+			text-align: center;	
+			border-radius: 3px;	
+			border: 1px solid #09C;
+			
+		}		
+			.phoneMenu > ul {
+				list-style:none;
+				padding: 0;	
+			}
+			.phoneMenu > ul > li{			
+				margin: 5px auto;
+				color: #09C;			
+			}
+			.phoneMenu a {
+				color: #09C;
+				text-decoration: none;
+			}
+			.phoneMenu a:hover {
+				font-weight: 800;
+			}
+	}	
 	@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
 		.gallery-item {
-		    	width: 95%;
-		 }
+		    width: 85%;
+		    transition: all 0.5s ease;
+		}
 		#big_pic {   /* new  */	      
-	      		width: 90%;	    
-	        }
+	      	width: 90%;	    
+	    }
 	}
 
 	.spend {
@@ -216,7 +309,7 @@ body {
 			background-color: #6CF;						
 		} 		
 
-		.spend th, td {			
+		.spend th, .spend td {			
 			border: 1px solid #39C;
 			padding: 0.25rem;
 		}

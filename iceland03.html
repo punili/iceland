@@ -2,9 +2,19 @@
 <html>
 
 <head>
-	<title>Amazing Iceland！</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv ="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+	<meta name='keywords' content='冰島, 自助旅行, iceland, jiaying' />
+	<meta property="og:title" content="冰島。自助旅行去" /> 	
+	<meta property="og:url" content="https://punili.github.io/iceland_travel/iceland03.html"/>
+	<meta property="og:image" content="images/iceland_map.jpg" />
+	<meta property="og:description" content="冰島。自助旅行去~2016旅行經驗分享" />
+	<meta itemprop="name" content="冰島。自助旅行去"> 
+	<meta itemprop="description" content="冰島。自助旅行去~2016旅行經驗分享"> 
+	<meta itemprop="image" content="images/iceland_map.jpg">
+ 	<link rel="shortcut icon" href="images/favicon.ico">
+ 	<title>Amazing Iceland！</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -18,189 +28,16 @@
 	          $('#close').on('click', function(){  //按下關閉鈕
 	            $('.showImg').hide();
 	          });
-	      });  
+	      });
+	    $('.phoneBar').click(function(){
+			$('.phoneMenu').slideToggle();
+		});  
      }
    </script>
    <noscript>Your browser does not support JavaScript!</noscript>
-	<style>
-		body {
-		  max-width: 1200px;
-		  margin: auto;
-		  font-family:"微軟正黑體", "Space Mono", sans-serif;
-		  font-size: 18px;
-		  line-height: 1.4em;
-		  background-color: #CFF;
-		  background: url(images/iceland/iceland-bg.jpg) no-repeat center top;
-		  background-size: cover;
-		  background-attachment: fixed; 
-		}
-
-		.web_head {    /* 冰島自助旅行去 */
-		  background-color: #FFF;		  
-		  padding: 8px 8px 15px 30px;		  
-		  position: fixed;
-		  top: 0;	      
-	      left: 0;
-	      width: 100%;
-	      z-index: 999;	      
-  		  margin: auto;
-  		  opacity: 0.9;
-  		  filter: alpha(opacity=90); /* For IE8 and earlier */
-  		  		  
-		}
-
-		.web_head h2 {
-		  font-size: 32px;
-		  margin-left: auto;
-		  
-		}
-
-		.web_head p {
-		  font-size: 20px;
-		  margin-left: 10px;
-		}
-
-		.nav {		    /* 右上按鈕選單 */
-		  position: fixed;
-		  right: 10px;
-		  top: 50px;	
-		  width: 100%;	
-		  z-index: 1000;
-		  text-align: right;
-		}
-		
-		.contact-btn {  
-		  display: inline-block;	
-		  padding: 5px;		  
-		  text-align: center;
-		  
-		}
-
-		.contact-btn a {
-		  line-height: 60px;
-		  background-color: #FFF;
-		  border: 1px solid #09C;
-		  padding: 7px;
-		  border-radius: 4px;
-		  color: #09C;
-		  text-decoration: none;
-		}
-		
-		.contact-btn a:hover {
-		  background-color: #09C;
-		  color: #FFF;
-		  border: 1px solid #09C;
-		}
-
-		.contact-btn a:active {
-		  position: relative;
-		  top: 2px;
-		  left: 1px;
-		}
-
-		.contact-btn input {				
-				background-color: #FFF;
-				border: 1px solid #09C;
-				padding: 7px;
-				border-radius: 4px;
-				color: #09C;
-		}
-
-		.tp a {
-		  background-color: #09C;
-		  color: #FFF;
-		}
-
-		.showImg {  /* new  */
-	      background-color: rgba(204,204,204,0.8);      
-	      position: fixed;
-	      left: 0;
-	      top: 140px;
-	      width: 100%;
-	      z-index: 1000;
-	      text-align: center;
-    	}
-
-	    .showImg div {
-	      text-align: center;
-	    }
-
-	    #big_pic {   /* new  */
-	      margin-top: 10px; 
-	      background-color: #FFF;
-	      width: 40%;	    
-	    }
-
-	    #close {  /* new */      
-	      background-color: #09F;
-	      border: 1px solid #FFF;
-	      padding: 10px 20px;
-	      border-radius: 4px;
-	      color: #FFF;
-	      font-weight: 600;          
-    	}
-
-	    #pic_content {   /* new */    
-	      margin: 15px;
-	    }
-
-		.con {
-		  margin: 170px 0 2px 40px;
-		  font-size: 22px;
-		  width: 90%;
-		}
-
-		.gallery { 
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: center;
-		  margin-top: 10px;
-		}
-
-		.gallery-item {
-  		  margin: 20px;
-  		  width: 240px;
-		  border: 2px solid #FFF;
-		  border-radius: 4px;
-		  background-color: #FFF;
-		  opacity: 0.8;
-  		  filter: alpha(opacity=80); /* For IE8 and earlier */
-		}
-/*
-		.gallery-item:hover {
-  		  border: 2px solid #0CF;
-    	    	  
-		}
-*/
-    	.thumbnail {
-			width: 100%;
-		    height: auto;
-
-		}
-
-		.thumbnail:hover {
-			width: 100%;
-		    height: auto;
-		    border: 1px solid #0CF;
-		    opacity: 0.8;
-  		    filter: alpha(opacity=80); /* For IE8 and earlier */
-		}
-		
-		figcaption {
-		    padding: 10px;
-		    text-align: center;
-		}
-
-		@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
-		  .gallery-item {
-		    width: 95%;
-		  }
-		  #big_pic {   /* new  */	      
-	      width: 90%;	    
-	      }
-		}
-
-	</style>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+   <link rel="stylesheet" type="text/css" href="main.css">
+	
 
 </head>
 
@@ -209,68 +46,79 @@
     <h2>冰島。自助旅行去</h2>
 	<p>Amazing Iceland！</p>
 </div>
+
 <div class="nav">
-    <ul>
-      <li class="contact-btn"><form action="iceland00.html"><input type="text" name="q"><input type="submit" value="搜尋"></form></li>
+	<div class="search-bar"><form action="iceland00.html"><input type="text" name="q" class="searchBarInput"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></form></div>
+    <ul>      
       <li class="contact-btn"><a href="iceland01.html">行前規劃</a></li>
       <li class="contact-btn"><a href="iceland02.html">探險日記</a></li>
       <li class="contact-btn tp"><a href="iceland03.html">奇幻風光</a></li>       
       <li class="contact-btn"><a href="iceland04.html">旅遊花費</a></li>
-    </ul>    
-  </div>
-  <div class="showImg">
-      <div><img id="big_pic" src="#"></div>
-      <div id="pic_content">圖片說明</div>
-      <div id="close">關閉</div>     
-  </div>
+    </ul>
+    <div class="phoneBar"><i class="fa fa-bars" aria-hidden="true"></i></div>  
+
+</div>
+<div class="phoneMenu">
+	<ul>				
+        <li class=""><a href="iceland01.html">行前規劃</a></li>
+	    <li class=""><a href="iceland02.html">探險日記</a></li>
+	    <li class=""><a href="iceland03.html">奇幻風光</a></li>       
+	    <li class=""><a href="iceland04.html">旅遊花費</a></li>
+	</ul>
+</div>
+<div class="showImg">
+	<div id="close">X</div>
+	<div id="pic_content">圖片說明</div>
+    <div><img id="big_pic" src="#"></div>               
+</div>
   <p class="con">2016年第一次出國自助旅行，拜訪遙遠北極圈邊緣的國度--冰島，帶回了旅途中的風景，跟著我一同探索冰島的奇幻風光吧！ (點擊圖片可放大觀看)</p>
 	<div class="gallery">
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland01.jpg" alt="飛機上俯瞰">
+        <img class="thumbnail" src="images/iceland01.jpg" alt="飛機上俯瞰">
         <figcaption>飛機上俯瞰</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland02.jpg" alt="藍湖溫泉Blue lagoon">
+        <img class="thumbnail" src="images/iceland02.jpg" alt="藍湖溫泉Blue lagoon">
         <figcaption>藍湖溫泉Blue lagoon</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland03.jpg" alt="辛維利爾國家公園Þingvellir National Park<">
+        <img class="thumbnail" src="images/iceland03.jpg" alt="辛維利爾國家公園Þingvellir National Park">
         <figcaption>辛維利爾國家公園Þingvellir National Park</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland04.jpg" alt="凱瑞斯Kerið結冰的火山口湖">
+        <img class="thumbnail" src="images/iceland04.jpg" alt="凱瑞斯Kerið結冰的火山口湖">
         <figcaption>凱瑞斯Kerið結冰的火山口湖</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland05.jpg" alt="斯科加瀑布Skógafoss">
+        <img class="thumbnail" src="images/iceland05.jpg" alt="斯科加瀑布Skógafoss">
         <figcaption>斯科加瀑布Skógafoss</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland06.jpg" alt="間歇泉Strokkur Geysir">
+        <img class="thumbnail" src="images/iceland06.jpg" alt="間歇泉Strokkur Geysir">
         <figcaption>間歇泉Strokkur Geysir</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland07.jpg" alt="夕照-冰河湖Jökulsárlón">
+        <img class="thumbnail" src="images/iceland07.jpg" alt="夕照-冰河湖Jökulsárlón">
         <figcaption>夕照-冰河湖Jökulsárlón</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland08.jpg" alt="藍色冰洞">
+        <img class="thumbnail" src="images/iceland08.jpg" alt="藍色冰洞">
         <figcaption>藍色冰洞</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland09.jpg" alt="Öndólfsstaðir &nbsp;farm&nbsp;旁的冰雪河景">
+        <img class="thumbnail" src="images/iceland09.jpg" alt="Öndólfsstaðir &nbsp;farm&nbsp;旁的冰雪河景">
         <figcaption>Öndólfsstaðir &nbsp;farm&nbsp;旁的冰雪河景</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland10.jpg" alt="天邊一道藍綠光，極光 Öndólfsstaðir farm">
+        <img class="thumbnail" src="images/iceland10.jpg" alt="天邊一道藍綠光，極光 Öndólfsstaðir farm">
         <figcaption>天邊一道藍綠光，極光 Öndólfsstaðir farm</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland11.jpg" alt="峽灣小鎮&nbsp;Seyðisfjörður">
+        <img class="thumbnail" src="images/iceland11.jpg" alt="峽灣小鎮&nbsp;Seyðisfjörður">
         <figcaption>峽灣小鎮&nbsp;Seyðisfjörður</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img class="thumbnail" src="images/iceland/iceland12.jpg" alt="峽灣小鎮&nbsp;Seyðisfjörður的藍色教堂">
+        <img class="thumbnail" src="images/iceland12.jpg" alt="峽灣小鎮&nbsp;Seyðisfjörður的藍色教堂">
         <figcaption>峽灣小鎮&nbsp;Seyðisfjörður的藍色教堂</figcaption>
       </figure>
     </div>

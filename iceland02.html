@@ -2,143 +2,31 @@
 <html>
 
 <head>
-	<title>Amazing Iceland！</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<style>
-		body {
-		  max-width: 1200px;
-		  margin: auto;
-		  font-family:"微軟正黑體", "Space Mono", sans-serif;
-		  font-size: 18px;
-		  line-height: 1.4em;
-		  background-color: #CFF;
-		  background: url(images/iceland/iceland-bg.jpg) no-repeat center top;
-		  background-size: cover;
-		  background-attachment: fixed; 
-		}
-
-		.web_head {    /* 冰島自助旅行去 */
-		  background-color: #FFF;		  
-		  padding: 8px 8px 15px 30px;		  
-		  position: fixed;
-		  top: 0;	      
-	      left: 0;
-	      width: 100%;
-	      z-index: 999;	      
-  		  margin: auto;
-  		  opacity: 0.9;
-  		  filter: alpha(opacity=90); /* For IE8 and earlier */
-  		  		  
-		}
-
-		.web_head h2 {
-		  font-size: 32px;
-		  margin-left: auto;
-		  
-		}
-
-		.web_head p {
-		  font-size: 20px;
-		  margin-left: 10px;
-		}
-
-		.nav {		    /* 右上按鈕選單 */
-		  position: fixed;
-		  right: 10px;
-		  top: 50px;	
-		  width: 100%;	
-		  z-index: 1000;
-		  text-align: right;
-		}
-		
-		.contact-btn {  
-		  display: inline-block;	
-		  padding: 5px;		  
-		  text-align: center;
-		  
-		}
-
-		.contact-btn a {
-		  line-height: 60px;
-		  background-color: #FFF;
-		  border: 1px solid #09C;
-		  padding: 7px;
-		  border-radius: 4px;
-		  color: #09C;
-		  text-decoration: none;
-		}
-		
-		.contact-btn a:hover {
-		  background-color: #09C;
-		  color: #FFF;
-		  border: 1px solid #09C;
-		}
-
-		.contact-btn a:active {
-		  position: relative;
-		  top: 2px;
-		  left: 1px;
-		}
-
-		.contact-btn input {				
-				background-color: #FFF;
-				border: 1px solid #09C;
-				padding: 7px;
-				border-radius: 4px;
-				color: #09C;
-		}
-
-		.tp a {
-		  background-color: #09C;
-		  color: #FFF;
-		}    
-
-		.con {
-		  margin: 170px 0 2px 50px;
-		  font-size: 1.4rem;
-		  width: 90%;
-		}
-
-		.container {
-			width: 100%;
-			text-align: left;
-		}
-
-		.content {
-			font-size: 1.4rem;
-			border-radius: 4px;
-			background-color: #FFF;
-		    color: #000;
-		    border: 1px solid #FFF;		    
-		    margin: 10px auto;
-		    padding: 15px;
-		    width: 80%;
-  		    opacity: 0.7;
-  		    filter: alpha(opacity=70); /* For IE8 and earlier */
-		}		
-
-		.content img {
-			width: 60%;
-			margin: 10px auto;	
-			padding: 15px 20%;		
-		}
-
-		.content img:hover {
-			width: 80%;
-			margin: 10px auto;	
-			padding: 15px 10%;		
-		}
-
-		.content img:active {
-			width: 80%;
-			margin: 10px auto;	
-			padding: 15px 10%;		
-		}
-
-
-	</style>
-
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv ="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+	<meta name='keywords' content='冰島, 自助旅行, iceland, jiaying' />
+	<meta property="og:title" content="冰島。自助旅行去" /> 	
+	<meta property="og:url" content="https://punili.github.io/iceland_travel/iceland02.html"/>
+	<meta property="og:image" content="images/iceland_map.jpg" />
+	<meta property="og:description" content="冰島。自助旅行去~2016旅行經驗分享" />
+	<meta itemprop="name" content="冰島。自助旅行去"> 
+	<meta itemprop="description" content="冰島。自助旅行去~2016旅行經驗分享"> 
+	<meta itemprop="image" content="images/iceland_map.jpg">
+ 	<link rel="shortcut icon" href="images/favicon.ico">
+ 	<title>Amazing Iceland！</title>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.phoneBar').click(function(){
+				$('.phoneMenu').slideToggle();
+			});
+		});   	  
+    </script>
+	<noscript>Your browser does not support JavaScript!</noscript>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
@@ -147,19 +35,27 @@
 	<p>Amazing Iceland！</p>
 </div>
 <div class="nav">
-    <ul>
-      <li class="contact-btn"><form action="iceland00.html"><input type="text" name="q"><input type="submit" value="搜尋"></form></li>
+	<div class="search-bar"><form action="iceland00.html"><input type="text" name="q" class="searchBarInput"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></form></div>
+    <ul>      
       <li class="contact-btn"><a href="iceland01.html">行前規劃</a></li>
       <li class="contact-btn tp"><a href="iceland02.html">探險日記</a></li>
       <li class="contact-btn"><a href="iceland03.html">奇幻風光</a></li>       
       <li class="contact-btn"><a href="iceland04.html">旅遊花費</a></li>
-    </ul>    
+    </ul>  
+    <div class="phoneBar"><i class="fa fa-bars" aria-hidden="true"></i></div>   
   </div>
-  
+<div class="phoneMenu">
+	<ul>				
+        <li class=""><a href="iceland01.html">行前規劃</a></li>
+	    <li class=""><a href="iceland02.html">探險日記</a></li>
+	    <li class=""><a href="iceland03.html">奇幻風光</a></li>       
+	    <li class=""><a href="iceland04.html">旅遊花費</a></li>
+	</ul>
+</div>
   <p class="con">2016年第一次出國自助旅行，拜訪位在北極圈邊緣的遙遠國度--冰島！ 這次是採環島自駕的方式遊覽。要在出國前先申請好國際駕照！</p>
   <div class="container">
     <div class="content">
-      <img src="images/iceland/iceland_map.jpg">	
+      <img src="images/iceland_map.jpg">	
     </div>
   	<div class="content">
   	  03/21 <br> Day 1 中國國際航空，18:45桃園機場起飛，22:10抵達北京
